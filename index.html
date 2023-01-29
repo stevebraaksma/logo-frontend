@@ -24,6 +24,12 @@
     <link rel="stylesheet" href="css/custom.css" />
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+      integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <!-- NAVBAR-->
@@ -90,7 +96,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="btn btn-primary" href="about.html"> Generate Logo </a>
+                <a class="btn btn-primary" href="#logo-generator-jump-link">
+                  Generate Logo
+                </a>
               </li>
             </ul>
           </div>
@@ -261,7 +269,7 @@
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua.
             </p>
-            <a
+            <!-- <a
               class="video-btn d-flex align-items-center"
               href="#!"
               data-video-id="B6uuIHpFkuo"
@@ -270,7 +278,10 @@
                 <span class="text-muted d-block line-height-sm">Watch</span
                 ><strong class="text-uppercase text-dark">Intro Video</strong>
               </div></a
-            >
+            > -->
+            <a class="btn btn-primary" href="#logo-generator-jump-link">
+              Generate Logo
+            </a>
           </div>
           <div class="col-md-5 ml-auto">
             <div class="img-gradient img-gradient-right">
@@ -470,7 +481,9 @@
       <div class="container py-5">
         <div class="row">
           <div class="col-lg-7 mx-auto text-center mb-5">
-            <h2>Looking for a excellent Business idea?</h2>
+            <h2 id="logo-generator-jump-link">
+              Looking for a excellent Business idea?
+            </h2>
             <p class="text-muted">
               Seamlessly deliver pandemic e-services and next-generation
               initiatives.
@@ -512,14 +525,32 @@
                     placeholder="How can we help you"
                   ></textarea>
                 </div> -->
-                <div class="col-12">
-                  <!-- some kind of logo selector would go here, to toggle logos that are in svg format and hosted on imgur  -->
+                <div class="row p-5">
+                  <div
+                    class="col-lg-6 g-0 card-hover-bg"
+                    style="display: flex; justify-content: space-around"
+                  >
+                    <i class="fas fa-code fa-5x p-3"></i>
+                    <i class="fas fa-bug fa-5x p-3"></i>
+                    <i class="fas fa-user-secret fa-5x p-3"></i>
+                  </div>
+
+                  <div
+                    class="col-lg-6 g-0"
+                    style="display: flex; justify-content: space-around"
+                  >
+                    <i class="fas fa-solid fa-laptop-code fa-5x p-3"></i>
+                    <i class="fas fa-solid fa-code-branch fa-5x p-3"></i>
+                    <i class="fas fa-solid fa-keyboard fa-5x p-3"></i>
+                  </div>
                 </div>
+
                 <div class="col-12 text-md-center mb-0">
-                  <button class="btn btn-primary" type="submit">
-                    <!-- <i class="fas fa-paper-plane me-2"></i> -->
-                    Download My Logo
-                  </button>
+                  <!-- <button class="btn btn-primary" type="submit"> -->
+                  <!-- <i class="fas fa-paper-plane me-2"></i> -->
+                  <!-- Download My Logo
+                  </button> -->
+                  <a class="btn btn-primary" href="#/">Download My Logo</a>
                 </div>
               </div>
             </form>
